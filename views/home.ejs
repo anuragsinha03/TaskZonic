@@ -1,0 +1,52 @@
+<%- include("partials/header"); -%>
+
+
+<h1 class="tagline">Get Work Done in <span class="tagline-gradient">One Unified</span> Workspace.</h1>
+<p class="tagline-p">Organize task lists, take structured notes, manage projects, and collaborate instantly!</p>
+
+<form action="/start" method="post">
+    <button id="get-started-btn" type="submit">Get Started</button>
+</form>
+
+
+
+<img src="/images/laptop.png" alt="avatar-img" class="laptop-demo">
+<h2 class='wycd'>WHAT YOU CAN DO</h2>
+<p class="wycd-body">Plan, Organize, and Execute Your Projects.</p>
+
+<% for(var i=0; i<3; i++){ %>
+    <div class="feature-demo">
+        <i class="<%= iconClass[i] %> feature-icon"></i>
+    </div>
+    <h3 class="feature-text"><%= title[i] %></h3>
+    <p class="feature-content"><%= description[i] %></p>
+<%}%>
+
+<img src="/images/computer.png" alt="avatar-img" class="computer-demo">
+<h2 class='wycd'>OPPORTUNITIES</h2>
+<h3 class='wycd-body'>Get Work Done. Faster + Smarter.</h3>
+
+<!-- timeline goes here -->
+
+<h2 class='wycd'>CUSTOMER STORIES</h2>
+<h3 class='wycd-body'>Trusted by the world's most innovative teams.</h3>
+
+<h2 class="tagline">Let's Make Something Amazing Together</h2>
+
+<div class="cta">
+    <i class="fab fa-instagram cta-logo"></i>
+</div>
+<div class="cta">
+    <i class="fab fa-facebook-f cta-logo"></i>
+</div>
+
+
+<div class="post-cta">
+    <p id="post-cta-border">WHAT YOU CAN DO</p>
+    <p>OPPORTUNITIES</p>
+    <p>CUSTOMER STORIES</p>
+    <p>IMPRESSUM</p>
+</div>
+
+
+<%- include("partials/footer"); -%>
