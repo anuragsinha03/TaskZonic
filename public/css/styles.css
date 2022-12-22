@@ -133,14 +133,14 @@ body {
   margin-right: auto;
   margin-left: auto;
   margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .feature-icon{
   font-size: 40px;
-  position: relative;
-  top: 25%;
-  left: 25%;
 }
 
 .feature-text{
@@ -158,23 +158,19 @@ body {
   margin-right: auto;
   width: 250px;
   height: 260px;
-
 }
 
 .cta{
-  font-size: 2.5rem;
-  border: 4px solid #fff;
+  font-size: 1.8rem;
+  border: 2px solid #fff;
   border-radius: 50%;
   float: left;
   width: 60px;
   height: 60px;
   margin-left: 35px;
-}
-
-.cta-logo{
-  position: relative;
-  top: 15%;
-  left: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
