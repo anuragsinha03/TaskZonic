@@ -160,7 +160,7 @@ body {
 
 .nav-list {
   display: flex;
-  gap: 3rem;
+  gap: clamp(1rem, 2rem, 3rem);
 }
 
 .nav-list a {
@@ -173,7 +173,7 @@ body {
 
 
 
-@media (max-width: 50em) {
+@media (max-width: 67em) {
   .primary-naviagtion {
     display: none;
     padding: 3rem;
@@ -188,8 +188,7 @@ body {
 
   .nav-list {
     display: grid;
-    /* gap: 1.7rem; */
-    gap: clamp(1rem, 1.7rem, 3rem);
+    gap: 1.7rem;
     text-align: center;
     font-size: var(--fs-300);
     font-weight: var(--fw-semi-bold);
@@ -227,7 +226,7 @@ body {
   cursor: pointer;
 }
 
-.general-btn:hover{
+.general-btn:hover {
   border: none;
   background-color: var(--clr-text);
   color: var(--clr-500);
@@ -309,7 +308,7 @@ body {
   gap: 1rem;
   margin-top: 20px;
   margin-bottom: 20px;
-  cursor:pointer ;
+  cursor: pointer;
 }
 
 
@@ -327,8 +326,8 @@ body {
   align-items: center;
 }
 
-.cta:hover{
-  border:2px solid var(--clr-300);
+.cta:hover {
+  border: 2px solid var(--clr-300);
   background-color: var(--clr-text);
   color: var(--clr-500);
 }
@@ -353,7 +352,7 @@ body {
 }
 
 /* --------------------------------------------------------------------------------------------- */
-@media (min-width: 50em) {
+@media (min-width: 45em) {
   :root {
     --fs-primary-heading: 3.25rem;
     --fs-secondary-heading: 2.0rem;
