@@ -22,12 +22,14 @@
   --fs-400: 1.75rem;
   --fs-300: 1rem;
   --fs-200: 0.75rem;
+  --fs-190: 0.9rem;
   --fs-100: 0.5rem;
 
   --fs-primary-heading: var(--fs-400);
   --fs-secondary-heading: var(--fs-300);
   --fs-button: var(--fs-200);
   --fs-text: var(--fs-100);
+  --fs-in-text: var(--fs-190);
   --fs-customer-heading: var(--fs-300);
   --fs-customer-secondary-heading: var(--fs-200);
 
@@ -39,6 +41,8 @@
   --font-size-200: 1rem;
   --size: 2.5rem;
 }
+
+
 
 /* -------------------------------------------------------------------------------------- */
 
@@ -106,6 +110,10 @@
 
 .fs-text {
   font-size: var(--fs-text);
+}
+
+.fs-in-text {
+  font-size: var(--fs-in-text);
 }
 
 .fs-customer-heading {
