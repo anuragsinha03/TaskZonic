@@ -1,52 +1,100 @@
 <%- include("partials/header"); -%>
 
-
-<h1 class="tagline">Get Work Done in <span class="tagline-gradient">One Unified</span> Workspace.</h1>
-<p class="tagline-p">Organize task lists, take structured notes, manage projects, and collaborate instantly!</p>
-
-<form action="/start" method="post">
-    <button id="get-started-btn" type="submit">Get Started</button>
-</form>
-
-
-
-<img src="/images/laptop.png" alt="avatar-img" class="laptop-demo">
-<h2 class='wycd'>WHAT YOU CAN DO</h2>
-<p class="wycd-body">Plan, Organize, and Execute Your Projects.</p>
-
-<% for(var i=0; i<3; i++){ %>
-    <div class="feature-demo">
-        <i class="<%= iconClass[i] %> feature-icon"></i>
-    </div>
-    <h3 class="feature-text"><%= title[i] %></h3>
-    <p class="feature-content"><%= description[i] %></p>
-<%}%>
-
-<img src="/images/computer.png" alt="avatar-img" class="computer-demo">
-<h2 class='wycd'>OPPORTUNITIES</h2>
-<h3 class='wycd-body'>Get Work Done. Faster + Smarter.</h3>
-
-<!-- timeline goes here -->
-
-<h2 class='wycd'>CUSTOMER STORIES</h2>
-<h3 class='wycd-body'>Trusted by the world's most innovative teams.</h3>
-
-<h2 class="tagline">Let's Make Something Amazing Together</h2>
-
-<div class="cta">
-    <i class="fab fa-instagram"></i>
-</div>
-<div class="cta">
-    <i class="fab fa-facebook-f"></i>
-</div>
+    <main class="home-Page-Container">
+        <section class="hero-Section ">
+            <div class="even-col">
+                <div class="col1">
+                    <h1 class="fs-primary-heading  fw-bold  clr-text ">Get Work Done <br>in <span
+                            class="tagline-gradient">One Unified</span> <br>Workspace.</h1>
+                    <p class="fs-secondary-heading  fw-regular  block-padding-400 ">Organize task lists, take structured
+                        notes, manage
+                        projects, and collaborate
+                        instantly!
+                    </p>
+                    <form action="/start" method="post">
+                        <button class="general-btn" id="get-started-btn" type="submit">Get Started</button>
+                    </form>
+                </div>
+                <div class="col2 | block-padding-400 ">
+                    <img src="/images/laptop.png" alt="avatar-img" class="laptop-demo">
+                </div>
 
 
-<div class="post-cta">
-    <p id="post-cta-border">WHAT YOU CAN DO</p>
-    <p>OPPORTUNITIES</p>
-    <p>CUSTOMER STORIES</p>
-    <p>IMPRESSUM</p>
-</div>
+            </div>
+
+        </section>
+
+        <section class="wycd-container">
+            <h2 class='wycd | fs-secondary-heading fw-bold clr-text block-padding-400'>WHAT YOU CAN DO</h2>
+            <p class="wycd-body | fs-secondary-heading fw-bold clr-text " style="text-align: center">Plan, Organize, and
+                Execute Your
+                Projects.
+            </p>
+            <div class="even-col more-gap | block-padding">
+                <% for(var i=0; i<3; i++){ %>
+                    <div class="cols | block-padding-400">
+                        <div class="feature-demo">
+                            <i class="<%= iconClass[i] %> feature-icon"></i>
+                        </div>
+                        <h3 class="feature-text | fw-bold clr-text fs-button">
+                            <%= title[i] %>
+                        </h3>
+                        <p class="feature-content | fw-semi-bold clr-text fs-text">
+                            <%= description[i] %>
+                        </p>
+                    </div>
+                    <%}%>
+            </div>
+            <img src="/images/computer.png" alt="avatar-img" class="computer-demo">
 
 
-<%- include("partials/footer"); -%>
+            <h2 class='wycd | fw-bold fs-secondary-heading clr-text block-padding-400'>OPPORTUNITIES</h2>
+            <h3 class='wycd-body | fw-semi-bold fs-secondary-heading clr-text'>Get Work Done. Faster +
+                Smarter.</h3>
+
+            <!-- timeline goes here -->
+
+
+            <h2 class='wycd | fw-bold fs-customer-heading clr-text block-padding-400'>CUSTOMER STORIES</h2>
+            <h3 class='wycd-body | fw-regular fs-customer-secondary-heading clr-text'>Trusted by the world's most
+                innovative
+                teams.</h3>
+        </section>
+
+        <section class="footer | block-padding-600">
+            <div class="even-col">
+                <div class="cols1">
+                    <h2 class="tagline | fs-primary-heading fw-bold clr-text">Let's Make Something Amazing Together
+                    </h2>
+                    <div class="cta-btn">
+                        <div class="cta">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="cta">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cols2">
+                    <div class="post-cta">
+
+                        <ul role=list class="secondary-navigation | fw-regular fs-text">
+                            <li><a href="#" class="active">WHAT YOU CAN DO</a></li>
+                            <li><a href="#">OPPORTUNITIES</a></li>
+                            <li><a href="#">CUSTOMER STORIES</a></li>
+                            <li><a href="#">IMPRESSUM</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <%- include("partials/footer"); -%>
