@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*---------------------------------------- Variables----------------------------------- */
+:root {
+  --clr-500: #1B4967;
+  --clr-400: #1B4D70;
+  --clr-300: #2A709F;
+  --clr-200: #47B5FF;
+  --clr-100: #7CCAFF;
+  --clr-50: #dff6ff;
+  --clr-menu-btn: #888;
+
+  --clr-text: #fff;
+  --clr-invert-text: #1A1A1A;
+
+  --ff-primary: 'Inter', sans-serif;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  --fs-400: 1.75rem;
+  --fs-300: 1rem;
+  --fs-200: 0.75rem;
+  --fs-100: 0.5rem;
+
+  --fs-primary-heading: var(--fs-400);
+  --fs-secondary-heading: var(--fs-300);
+  --fs-button: var(--fs-200);
+  --fs-text: var(--fs-100);
+  --fs-customer-heading: var(--fs-300);
+  --fs-customer-secondary-heading: var(--fs-200);
+
+  --block-padding-400: 1.45rem;
+  --block-padding-500: 2rem;
+  --block-padding-600: 3.5rem;
+
+  --font-size-400: 3.438rem;
+  --font-size-200: 1rem;
+  --size: 2.5rem;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+/* ----------------------------utlity Classes --------------------------------------------*/
+.none {
+  display: none;
+}
+
+.clr-500 {
+  color: var(--clr-500);
+}
+
+.clr-400 {
+  color: var(--clr-400);
+}
+
+.clr-300 {
+  color: var(--clr-300);
+}
+
+.clr-200 {
+  color: var(--clr-200);
+}
+
+.clr-100 {
+  color: var(--clr-100);
+}
+
+.clr-text {
+  color: var(--clr-text);
+}
+
+.clr-invert {
+  color: var(--clr-invert-text);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fs-primary-heading {
+  font-size: var(--fs-primary-heading);
+}
+
+.fs-secondary-heading {
+  font-size: var(--fs-secondary-heading);
+}
+
+.fs-primary-heading {
+  font-size: var(--fs-primary-heading);
+}
+
+.fs-button {
+  font-size: var(--fs-button);
+}
+
+.fs-text {
+  font-size: var(--fs-text);
+}
+
+.fs-customer-heading {
+  font-size: var(--fs-customer-heading);
+
+}
+
+.fs-customer-secondary-heading {
+  font-size: var(--fs-customer-secondary-heading);
+}
+
+.block-padding-400 {
+  padding-block: var(--block-padding-400);
+}
+
+.block-padding-500 {
+  padding-block: var(--block-padding-500);
+}
+
+.block-padding-600 {
+  padding-block: var(--block-padding-600);
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+/* ----------------------------general styling --------------------------------------------*/
+
+body{
+    background-color: var(--clr-50);
+    font-family: var(--ff-primary);
+    color: var(--clr-text);
+    font-weight: var(--fw-regular);
+}
+
+.nav-logo{
+    width: 145px;
+    height: 103px;
+}
+
+.container{
+    --max-width: 1380px;
+    --padding: 1rem;
+    width: min(var(--max-width), calc(100% - var(--padding) * 4));
+    margin-inline: auto;
+}
+
+.left-container{
+    display: flex;   
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.right-container{
+    text-align: center;
+    width: 60%;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.SLRbtn{
+    width: 100%;
+    padding: 0.5rem 6rem;
+    border-radius: 10px;
+    background-color: var(--clr-200);
+    color: var(--clr-text);
+    border: none;
+    cursor: pointer;
+
+}
+
+.SLRbtn:hover{
+    border: none;
+    background-color: var(--clr-text);
+    color: var(--clr-500);
+}
+.btn-container{
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+
+@media (max-width: 50em) {
+    .wrapper {
+      flex-direction: column-reverse;
+    }
+    .left-container{
+        width: 100%;
+        height: calc(100vh - (60% + 120px));
+
+    }
+    .right-container-text{
+        display: none;
+    }
+    .right-container{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+    }
+  }
