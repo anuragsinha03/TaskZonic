@@ -15,7 +15,7 @@ app.get('/', function(req, res){
     res.render("home", {iconClass: featureIcon, title: featureTitle, description: featureDesc});
 });
 
-app.post('/start', function(req, res){
+app.get('/start', function(req, res){
     res.render('start');
 });
 

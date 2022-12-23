@@ -1,15 +1,23 @@
-<%- include("partials/header"); -%>
+<%- include("partials/SLRheader"); -%>
+<div class="wrapper">
+    <div class="left-container">
+        <h1 class="fw-semi-bold clr-invert fs-secondary-heading block-padding-400">Login | Signup</h1>
+        <div class="btn-container">
+        <form action="/login" method="get">
+            <button class="SLRbtn fw-semi-bold" type="submit">Login</button>
+        </form>
+        <form action="/register" method="get">
+            <button class="SLRbtn fw-semi-bold" type="submit">Register</button>
+        </form>
+    </div>
+    </div>
 
-
-<h1 class="wycd">Log in or sign up</h1>
-<div class="action-box">
-    <a href="/register" role="button">Register</a>
+    <div class="right-container">
+        <img src="/images/iPhone 12 Pro.png" alt="avatar-img">
+        <h3 class="right-container-text | clr-invert fw-semi-bold">Digital headquarters for great teamwork</h3>
+    </div>
 </div>
-<div class="action-box">
-    <a href="/login" role="button">Login</a>
+
+
 </div>
-
-
-
-
 <%- include("partials/footer"); -%>
