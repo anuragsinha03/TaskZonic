@@ -188,7 +188,8 @@ body {
 
   .nav-list {
     display: grid;
-    gap: 1.7rem;
+    /* gap: 1.7rem; */
+    gap: clamp(1rem, 1.7rem, 3rem);
     text-align: center;
     font-size: var(--fs-300);
     font-weight: var(--fw-semi-bold);
@@ -224,6 +225,12 @@ body {
   font-size: var(--fs-button);
   font-weight: var(--fw-regular);
   cursor: pointer;
+}
+
+.general-btn:hover{
+  border: none;
+  background-color: var(--clr-text);
+  color: var(--clr-500);
 }
 
 .home-Page-Container {
@@ -302,11 +309,14 @@ body {
   gap: 1rem;
   margin-top: 20px;
   margin-bottom: 20px;
+  cursor:pointer ;
 }
+
+
 
 .cta {
   font-size: var(--font-size-200);
-  border: 2px solid #fff;
+  border: 2px solid var(--clr-text);
   border-radius: 50%;
   float: left;
   /* padding: 30px; */
@@ -315,6 +325,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.cta:hover{
+  border:2px solid var(--clr-300);
+  background-color: var(--clr-text);
+  color: var(--clr-500);
 }
 
 .secondary-navigation {
