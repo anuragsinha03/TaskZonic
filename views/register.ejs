@@ -1,0 +1,44 @@
+<%- include("partials/SLRheader"); -%>
+
+<div class="wrapper">
+    <div class="left-container">
+        <h1 class=" clr-invert fs-primary-heading block-padding-400">Create new account</h1>
+        <div class="form-element">
+            <form action="/register" method="post">
+                <div class="username-container">
+                    <span class="fs-button">Username</span>
+                    <input type="text" placeholder="Enter Username" autocomplete="off">
+                    <span class="fs-button">This name will be displayed publicly</span>
+                </div>
+                <div class="company-container">
+                    <span class="fs-button">Company name / project name</span>
+                    <input type="text" placeholder="Enter Company / Project name" autocomplete="off">
+                </div>
+                <div class="email-container">
+                    <span class="fs-button">Email</span>
+                    <input type="email" placeholder="Enter Email" autocomplete="off">
+                </div>
+                
+                <div class="password-container">
+                    <span class="fs-button">Password</span>
+                    <input type="password" placeholder="Enter Password"  autocomplete="off">
+                    <span class="wrong-cred fs-button"><i class="fas fa-times"></i> Wrong Password</span>
+                </div>
+                <div class="password-container">
+                    <span class="fs-button">Confirm Password</span>
+                    <input type="password" placeholder="Confirm Password"  autocomplete="off">
+                    <span class="wrong-cred fs-button"><i class="fas fa-times"></i> Wrong Password</span>
+                </div>
+                <button type="submit" class="SLRbtn fw-semi-bold">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+<%- include("partials/SLR-right-container"); -%>
+</div>
+<%- include("partials/footer"); -%>
