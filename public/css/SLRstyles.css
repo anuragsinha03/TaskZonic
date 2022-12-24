@@ -9,6 +9,7 @@
   --clr-100: #7CCAFF;
   --clr-50: #dff6ff;
   --clr-menu-btn: #888;
+  --clr-button: #eff9ff;
 
   --clr-text: #fff;
   --clr-invert-text: #1A1A1A;
@@ -31,6 +32,7 @@
   --fs-customer-heading: var(--fs-300);
   --fs-customer-secondary-heading: var(--fs-200);
 
+  --block-padding-100: 0.5rem;
   --block-padding-400: 1.45rem;
   --block-padding-500: 2rem;
   --block-padding-600: 3.5rem;
@@ -116,6 +118,11 @@
   font-size: var(--fs-customer-secondary-heading);
 }
 
+.block-padding-100{
+    padding-block: var(--block-padding-100);
+}
+  
+
 .block-padding-400 {
   padding-block: var(--block-padding-400);
 }
@@ -191,15 +198,64 @@ body{
     flex-direction: column;
 }
 
+.username-container, .password-container, .company-container, .email-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.form-element input{
+    padding: 0.8rem 3rem 0.8rem 0.7rem;
+    border-radius: 10px;
+    border: 1px solid var(--clr-button);
+    outline: none;
+    font-size: var(--fs-button);
+    
+}
+
+.form-element :-ms-input-placeholder{
+    color: var(--clr-button);
+}
+
+.form-element span{
+    color: var(--clr-invert-text);
+}
+
+.password-container span:last-child{
+    color: red;
+}
+
+.form-element button{
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--clr-200);
+    color: var(--clr-text);
+    border: none;
+    border-radius: 10px;
+}
+
+.form-element p a{
+    text-decoration: none;
+}
+
+.form-element p a:hover{
+    text-decoration: underline;
+}
+
+.wrong-cred{
+  display: none;
+}
+
 
 @media (max-width: 50em) {
     .wrapper {
-      flex-direction: column-reverse;
+      flex-direction: column-reverse
     }
     .left-container{
         width: 100%;
         height: calc(100vh - (60% + 120px));
-
+        margin-bottom: 30px;
     }
     .right-container-text{
         display: none;
@@ -211,3 +267,5 @@ body{
         width: 100%;
     }
   }
+
+

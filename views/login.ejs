@@ -1,1 +1,31 @@
-<h1>HELLLOOO</h1>
+<%- include("partials/SLRheader"); -%>
+
+
+<div class="wrapper">
+    <div class="left-container">
+        <h1 class=" clr-invert fs-primary-heading block-padding-400">Login</h1>
+        <div class="form-element">
+            <form action="/login" method="post">
+                <div class="username-container">
+                    <span class="fs-button">Email</span>
+                    <input type="email" placeholder="Email" autocomplete="off">
+                </div>
+                <div class="password-container">
+                    <span class="fs-button">Password</span>
+                    <input type="password" placeholder="Password"  autocomplete="off">
+                    <span class="wrong-cred fs-button wrong-pass"><i class="fas fa-times"></i> Wrong Password</span>
+                </div>
+                <button type="submit" class="SLRbtn fw-semi-bold">Login</button>
+                <p class="fs-button clr-invert block-padding-100 fw-semi-bold">Forgot password? <a href="#" class="clr-300">Reset password</a></p>
+                
+            </form>
+        </div>
+    </div>
+
+
+
+
+<%- include("partials/SLR-right-container"); -%>
+
+</div>
+<%- include("partials/footer"); -%>
